@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('division', function (Blueprint $table) {
             $table->id();
+            $table->string('position_role');
             $table->string('division');
             $table->timestamps();
         });

@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('username');
             $table->string('email')->unique();
-            $table->string('nik')->unique();
+            $table->string('nik', 20)->unique();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
